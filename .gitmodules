@@ -1,0 +1,3 @@
+[submodule "src/kernel-packet-processing"]
+	path = src/kernel-packet-processing
+	url = git@github.com:oakeshott/Kernel-Packet-Processing-Empowered-by-Lightweight-Neural-Network-and-Decision-Tree.git
