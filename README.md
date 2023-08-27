@@ -4,7 +4,7 @@
 ```bash
 cd src/kernel-packet-processing/fixed-nn/src
 python train_mlp.py --save_dir ../saved_models/nn/binary-classification/16x16 --hidden_sizes 16 16 --num_epochs 30 --is-binary
-python quantize_with_package.py --save_dir ../saved_models/cnn/binary-classification/16x16 --filename mlp_pktflw.th --num_bins 128 --calib-method histogram --is-binary
+python quantize_with_package.py --save_dir ../saved_models/cnn/binary-classification/16x16 --filename mlp_pktflw.th --num_bins 128 --calib-method histogram --is-binary # Quantization
 python create_mlp_c_params.py --save_dir ${INDIR} --filename mlp_pktflw_quant.th
 make
 ```
